@@ -1,5 +1,6 @@
 class Student
   attr_accessor :name, :grade
+  attr_reader :id
 
   def initialize(name, grade, id = nil)
     @name = name
@@ -33,9 +34,5 @@ class Student
     new_student.save
     new_student
   end
-
-  private
-
-  attr_reader :id
 
 end
